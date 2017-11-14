@@ -9,11 +9,11 @@ def output_winner (computer_score, user_score):
         print('Nobody won this round!')
 
 current_round = 1
-rounds = 3
+tries = 3
 computer_won = 0
 user_won = 0
 
-while current_round <= rounds:
+while current_round <= tries:
     try:
         user = int(input("What are you? (1 = Scissors, 2 = Rock, 3 = Paper)"))
     except ValueError:
