@@ -37,7 +37,7 @@ while current_try <= tries:
             raise ValueTooSmallError
         elif user > 3:
             raise ValueTooLargeError
-    except TypeError:
+    except ValueError:
         print("Please enter a valid value!")
     except ValueTooSmallError:
         print("The value is too small!")
