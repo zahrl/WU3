@@ -25,12 +25,12 @@ def compute_result (computer, user):
     elif ((computer == 1 and user == 3) or (computer == 2 and user == 1) or (computer == 3 and user == 2)):
         return 0
 
-current_round = 1
+current_try = 1
 tries = 3
 computer_won = 0
 user_won = 0
 
-while current_round <= tries:
+while current_try <= tries:
     try:
         user = int(input("What are you? (1 = Scissors, 2 = Rock, 3 = Paper)"))
         if user < 1:
@@ -59,6 +59,6 @@ while current_round <= tries:
             print('Sorry, you lost!')
             
         print('Computer was ' + str(computer))
-        current_round += 1;
+        current_try += 1;
 
 output_round_winner(computer_won, user_won)
